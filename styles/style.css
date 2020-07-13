@@ -1,13 +1,13 @@
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgba(179, 190, 182, 0.815);
-    justify-content: center;
-}
-
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* background-color:rgba(179, 190, 182, 0.815); */
+    /* justify-content: center;  */
+} 
+/* 
 .container {
     display: flex;
     flex-direction: column;
@@ -144,8 +144,8 @@ header {
     padding: 5px;
     width: 45vw;
     min-width: 350px;
-}
-
+}  */
+/* 
 .skill-row {
     display: flex;
     justify-content: space-around;
@@ -202,8 +202,8 @@ p {
 
 .contact-resume {
     margin-left: 20px;
-}
-
+} */
+/* 
 footer {
     display: flex;
     width: 100%;
@@ -212,4 +212,4 @@ footer {
     color: white;
     border-radius: 0 0 10px 10px;
 
-}
+} */
