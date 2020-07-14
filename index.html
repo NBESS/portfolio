@@ -12,92 +12,102 @@
 </head>
 
 <body>
-    <div class="container-fluid d-flex flex-column">
-        <header>
-                <div class=" conatiner social">
-                    <ul class="logo-icons list-inline">
-                        <li class="logo"><i class="fab fa-github fa-lg"></i></li>
-                        <li class="logo"><i class="fab fa-linkedin fa-lg"></i></li>
-                        <li class="logo"><i class="far fa-envelope fa-lg"></i></li>
-                    </ul>
-                </div>
-        </header>
-        <div class="container bio ">
-            <h1 class="name">Nicholas Bess</h1>
-            <div class="title">Software Developer</div>
-            <h1>About Me</h1>
-            <p>I am a veteran, software developer, and creative genius. Well... maybe not exactly "Genius", but I did
-                inherit several creative "genes" from my parents! I have an unending passion for learning. I also have
-                great appreciation for the process of mastering new concepts and ideas. I am intrinsically motivated;
-                however, I receive more fulfillment from empowering others than receiving personal accolades. I have
-                decided to become a software developer so I can help bridge the gap between saying and doing.
-                Ultimately, I feel that having a solid understanding of today's development tools, will help to
-                establish the foundation required to create the innovations of tomorrow.</p>
-        </div>
-        <div class=" container-fluid d-flex projects">
-            <h1>Projects</h1>
-            <row>
-                <col>
-            <div class="project-image d-flex flex-row">
-                    <h2>Local Information Dashboard</h2>
-                    <img class="screenshot" src="/resources/Linfo.png" alt="Linfo screenshot" height="200" width="300">
-                    <p>Member of a 4-person development team building a single-page application, which allows a user to
-                        receive relevant
-                        news and information on a customizable dashboard.
-                        <br><br />
-                        Responsibilities included assisting in selecting a location API and using CSS for Bootstrap
-                        manipulation to alter
-                        application design.
-                        <br><br />
-                        Front-End group project built with: Bootstrap, JavaScript, jQuery, RESTful API.</p>
-                    </div>
-                </col>
-                <col>
-            <div class="project-image">
-                <h2>EventSet</h2>
-                <img class="screenshot" src="/resources/EventSet-login.png" alt="EventSet screenshot" height="200"
-                    width="300">
-                <p>Member of a 2-person development team building an application that allows users to create custom
-                    event
-                    reminders for a list of contacts.
-                    <br></br>
-                    Responsibilities included debugging, assisting with database creation, and integrating Node.js to
-                    store data
-                    <br></br>
-                    Built with: Bootstrap, JavaScript, Node.js, Express, Sequelize, and PostgreSQL</p>
+    <div class="container-fluid d-flex flex-column main-container">
+        <header class="row col-12 d-flex bg-white">
+            <div class="col social ">
+                <ul class="logo-icons list-inline">
+                    <li class="logo list-inline-item"><i class="fab fa-github fa-lg"></i></li>
+                    <li class="logo list-inline-item"><i class="fab fa-linkedin fa-lg"></i></li>
+                    <li class="logo list-inline-item"><i class="far fa-envelope fa-lg"></i></li>
+                </ul>
             </div>
-                </col>
-            </row>
+        </header>
+        <div class="main-content-container">
+            <div class="col- bio" style="width: 100%;">
+                <h1 class="name">Nicholas Bess</h1>
+                <div class="title">Software Developer</div>
+                <h3>Something About Me</h3>
+                <p>I am a veteran, software developer, and creative genius. Well... maybe not exactly "Genius", but I
+                    did
+                    inherit several creative "genes" from my parents! I have an unending passion for learning. I also
+                    have
+                    great appreciation for the process of mastering new concepts and ideas. I am intrinsically
+                    motivated;
+                    however, I receive more fulfillment from empowering others than receiving personal accolades. I have
+                    decided to become a software developer so I can help bridge the gap between saying and doing.
+                    Ultimately, I feel that having a solid understanding of today's development tools will help me
+                    establish the foundation required to create the innovations of tomorrow.</p>
+            </div>
+            <div class="row container-fluid projects mx-0 justify-content-center">
+                <div class="project-heading">
+                    <h1>Projects</h1>
+                </div>
+                <div class="row project-showcase d-flex container-fluid mx-0 px-2 overflow-auto">
+                    <div class="col-sm project-image d-flex flex-column">
+                        <h2 class="align-self-center"><a href="https://www.wizardly-khorana-147bb3.netlify.app">Local Information Dashboard</a></h2>
+                        <a class="align-self-center" href="https://www.wizardly-khorana-147bb3.netlify.app"><img class="screenshot"
+                                src="/resources/Linfo.png" alt="Linfo screenshot" height="200" width="300"></a>
+                        <p class="align-self-center mt-3">Member of a 4-person development team building a single-page application, which allows a user to
+                            receive relevant
+                            news and information on a customizable dashboard.
+                            <br>
+                            Responsibilities included assisting in selecting a location API and using CSS for Bootstrap
+                            manipulation to alter
+                            application design.
+                            <br>
+                            Front-End group project built with: Bootstrap, JavaScript, jQuery, RESTful API.</p>
+                    </div>
+                    <div class="col-sm project-image d-flex flex-column">
+                        <h2 class="align-self-center"><a href="http://www.eventset.herokuapp.com">EventSet</a></h2>
+                        <a class="align-self-center" href="http://www.eventset.herokuapp.com"><img class="screenshot" src="/resources/EventSet-login.png"
+                                alt="EventSet screenshot" height="200" width="300"></a>
+                        <p class="align-self-center mt-3">Member of a 2-person development team building an application that allows users to create custom
+                            event
+                            reminders for a list of contacts.
+                            <br>
+                            Responsibilities included debugging, assisting with database creation, and integrating Node.js
+                            to
+                            store data
+                            <br>
+                            Built with: Bootstrap, JavaScript, Node.js, Express, Sequelize, and PostgreSQL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills p-3 d-flex justify-content-center flex-column" style="background-color: rgba(2, 49, 49, 0.85);">
+                <h1 class="align-self-center mb-2">Skills</h1>
+                <table id="skill-table d-flex">
+                    <tr class="skill-row d-flex justify-content-between">
+                        <td class="skill-item d-flex flex-column"><i class="fab fa-python fa-5x"></i><span>Python</span>
+                        </td>
+                        <td class="skill-item d-flex flex-column"><i
+                                class="fab fa-js-square fa-5x"></i><span>JavaScipt</span></td>
+                        <td class="skill-item d-flex flex-column"><i class="fab fa-html5 fa-5x"></i><span>HTML 5</span>
+                        </td>
+                        <td class="skill-item d-flex flex-column"><i class="fab fa-css3-alt fa-5x"></i><span>CSS</span>
+                        </td>
+                    </tr>
+                    <tr class="skill-row odd d-flex justify-content-between mt-3">
+                        <td class="skill-item d-flex flex-column"><i class="fab fa-node-js fa-5x"></i><span>Node.js</span>
+                        </td>
+                        <td class="skill-item d-flex flex-column"><i class="fab fa-react fa-5x"></i><span>React.js</span>
+                        </td>
+                        <td class="skill-item d-flex flex-column"><i
+                                class="fab fa-bootstrap fa-5x"></i><span>Bootstrap</span></td>
+                    </tr>
+                    <tr class="skill-row">
+                        <td class="skill-item"><span></span></td>
+                        <td class="skill-item"><span></span></td>
+                        <td class="skill-item"><span></span></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="skills">
-            <h1>Skills</h1>
-            <table id="skill-table">
-                <tr class="skill-row">
-                    <td class="skill-item"><i class="fab fa-python fa-5x"></i><span>Python</span></td>
-                    <td class="skill-item"><i class="fab fa-js-square fa-5x"></i><span>JavaScipt</span></td>
-                    <td class="skill-item"><i class="fab fa-html5 fa-5x"></i><span>HTML 5</span></td>
-                    <td class="skill-item"><i class="fab fa-css3-alt fa-5x"></i><span>CSS</span></td>
-                </tr>
-                <tr class="skill-row odd">
-                    <td class="skill-item"><i class="fab fa-node-js fa-5x"></i><span>Node.js</span></td>
-                    <td class="skill-item"><i class="fab fa-react fa-5x"></i><span>React</span></td>
-                    <td class="skill-item"><i class="fab fa-angular fa-5x"></i><span>Angular</span></td>
-                    <td class="skill-item"><i class="fab fa-bootstrap fa-5x"></i><span>Bootstrap</span></td>
-                </tr>
-                <tr class="skill-row">
-                    <td class="skill-item"><span></span></td>
-                    <td class="skill-item"><span></span></td>
-                    <td class="skill-item"><span></span></td>
-                </tr>
-            </table>
-        </div>
-        <div class="glow glow-footer"></div>
-        <footer>
-            <div class="contact-form">
-                <div class="contact contact-email">
+        <footer class="container-fluid p-2 d-flex">
+            <div class="contact-form row">
+                <div class="contact contact-email col-12">
                     <h3>Contact Me</h3>
                 </div>
-                <div class="contact contact-resume">
+                <div class="contact contact-resume col-12">
                     <h3>Resume </h3>
                 </div>
             </div>
